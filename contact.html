@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--start nav-->
+    <nav class="navbar navbar-expand-lg static-top p-0 fixed-top bgd-white">
+        <div class="container">
+              <a class="navbar-brand p-0" href="#">
+              <!--nav-->
+                <img src="img/favicon.png" alt="" class="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <!--links-->
+            <ul class="navbar-nav ml-auto semiBold">
+              <li class="nav-item px-3">
+                <a class="nav-link color-primary" href="index.html">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link color-primary" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link color-primary" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link color-primary" href="candidates.html">Candidates</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--end nav-->
+      
+      <!--start header-->
+      <div class="contact-header text-center color-secondary font-weight-bold d-flex justify-content-center align-items-center" data-aos="zoom-in">
+        <h1 class="semiBold">Conatct Us</h1>
+      </div>
+      <!--end header-->
+
+      <div class="py-5 px-4 contact-secondary-header text-color text-center d-flex align-items-center">
+            <div class="d-grid-2-md left-contact" data-aos="zoom-in">
+                <!--adress-->
+                <div class="item bg-white p-3 rounded w-100 shadow" >
+                    <div class="icon py-1 px-3 bgd-primary d-block mx-auto rounded">
+                        <span class="iconify" data-inline="false" data-icon="ic:outline-place" style="color: #ffffff; font-size: 40px;"></span>
+                    </div>
+                    <p class="semiBold my-2">Adress</p>
+                    <p class="mb-0">High Rd, Tottenham, London N15 4RU</p>
+                </div>
+    
+                <!--email-->
+                <div class="item bg-white p-3 rounded shadow" >
+                    <div class="icon py-1 px-3 bgd-primary d-block mx-auto rounded">
+                        <span class="iconify" data-inline="false" data-icon="carbon:email" style="color: #ffffff; font-size: 40px;"></span>
+                    </div>
+                    <p class="semiBold my-2">Email</p>
+                    <p class="mb-0">744052@student.capitalccg.com</p>
+                    <p class="mb-0">support@flashrecruitment.com</p>
+                </div>
+    
+                <!--phone-->
+                <div class="item bg-white p-3 rounded shadow" >
+                    <div class="icon py-1 px-3 bgd-primary d-block mx-auto rounded">
+                        <span class="iconify" data-inline="false" data-icon="akar-icons:phone" style="color: #ffff ;font-size: 40px;"></span>
+                    </div>
+                    <p class="semiBold my-2">Phone</p>
+                    <p class="mb-0">1 (234) 567-891 </p>
+                    <p class="mb-0">1 (234) 987-654 </p>
+                </div>
+    
+                <!--fax-->
+                <div class="item bg-white p-3 rounded shadow">
+                    <div class="icon py-1 px-3 bgd-primary d-block mx-auto rounded">
+                        <span class="iconify" data-inline="false" data-icon="cil:fax" style="color: #ffffff; font-size: 40px;"></span>
+                    </div>
+                    <p class="semiBold my-2">Fax</p>
+                    <p class="mb-0">1 (234) 567-891 </p>
+                    <p class="mb-0">1 (234) 987-654 </p>
+                </div>
+              </div>
+
+
+          <div class="contact-form bgd-primary rounded" data-aos="zoom-in">
+            <h3 class="color-secondary font-weight-bold text-center">Drop Mail</h3>
+            <!--form-->
+            <form id="myForm" action="javascript:sendmail()" method="post">
+              <!--name input-->
+              <input class="form-control my-4" type="text" name="name" placeholder="Your Name" id="name" required>
+              <!--email input-->
+              <input class="form-control my-4" type="email" name="email" placeholder="Your Email" id="email" required>
+              <!--message input-->
+              <textarea class="form-control my-4" id="body" rows="5" placeholder="Your Message" required></textarea>
+              <!--submit button-->
+              <button type="submit" name="body" id="mybtn" class="btn btn-dark d-block mx-auto mt-4 px-5">Submit</button>
+            </form>
+        </div>
+
+      </div>
+
+      
+
+      <!--start footer-->
+    <footer class="container d-grid-3-footer bgd-primary color-secondary">
+        <!--text-->
+        <div class="fr py-4">
+            <h6 class="font-weight-bold">Flash Recruitment</h6>
+            <p class="mb-0 mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+            </p>
+        </div>
+        <!--social media-->
+        <div class="social-media py-4">
+            <h6 class="font-weight-bold text-center">Social Media</h6>
+            <div class="icons d-flex justify-content-between mt-4 px-3">
+                <!--facebook-->
+                <a href="">
+                    <span class="iconify" data-inline="false" data-icon="brandico:facebook-rect" style="color: #ffffff; font-size: 20px;"></span>
+                </a>
+                <!--instagram-->
+                <a href="">
+                    <span class="iconify" data-inline="false" data-icon="ri:instagram-fill" style="color: #ffffff; font-size: 20px;"></span>
+                </a>
+                <!--twitter-->
+                <a href="">
+                    <span class="iconify" data-inline="false" data-icon="ant-design:twitter-outlined" style="color: #ffffff; font-size: 20px;"></span>
+                </a>               
+            </div>
+        </div>
+        <!--contact-->
+        <div class="contact py-4">
+            <h6 class="font-weight-bold">Contact</h6>
+            <div>
+                <!--email-->
+                <a href="" class="d-flex color-secondary mt-3">
+                    <span class="iconify" data-inline="false" data-icon="clarity:email-solid" style="color: #ffffff; font-size: 20px;"></span>       
+                    <p class="ml-4 mb-0">
+                        744052@student.capitalccg.com
+                    </p>
+                </a>
+            </div>
+            <div>
+                <!--phone-->
+                <a href="" class="d-flex color-secondary mt-3">
+                    <span class="iconify" data-inline="false" data-icon="carbon:phone-filled" style="color: #ffffff; font-size: 20px;"></span>
+                    <p class="ml-4 mb-0">
+                        1 (234) 567-891 
+                    </p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <p class="bgd-primary color-secondary text-center mb-0">2021 All Rights Reserved </p>
+    <!--end footer-->
+    
+    
+      
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1000
+        });
+    </script>
+    <script>
+        function sendmail(){
+    
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var message = $('#body').val();
+
+
+    var Body='Name: '+name +'<br>Email: '+email+'<br>Message: '+message;
+
+    Email.send({
+SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+        To: '744052@student.capitalccg.ac.Uk',
+        From: email,
+        Subject: "New message on contact from "+name,
+        Body: Body
+    }).then(
+        message =>{
+            //console.log (message);
+            if(message=='OK'){
+            alert('Your mail has been send. Thank you for connecting.');
+            }
+            else{
+                console.error (message);
+                alert('There is error at sending message. ')
+                
+            }
+
+        }
+    );
+
+
+
+}
+    </script>
+</body>
+</html>
